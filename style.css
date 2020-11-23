@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-color: #EDF1F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    height: 70px;
+    width: 100vw;
+    background-color: #B6C3CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-spotify {
+    width: 1000px;
+    height: 100%;
+    background-color: red;
+}
+
+.logo-spotify img {
+    max-width: 50px;
+    margin: 10px;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cd-items {
+    width: 1000px;
+    height: 100%;
+    background-color: pink;
+}
