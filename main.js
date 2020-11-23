@@ -8,7 +8,18 @@
 var app = new Vue ({
     el: '#root',
     data: {
-
+        arrayDischi: []
     },
 
+    mounted() {
+        var self = this;
+
+        axios.get('https://flynn.boolean.careers/exercises/api/array/music')
+        .then(function(risp) {
+            self.arrayDischi = cd.data.response;
+            console.log(self.arrayDischi);
+
+
+        });
+    }
 })

@@ -16,12 +16,17 @@
             <div class="container">
                 <header>
                     <div class="logo-spotify">
-                        <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-brands-logo-34.png" alt="">
+                        <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-brands-logo-34.png" alt="spotify">
                     </div>
                 </header>
                 <main>
-                    <div class="cd-items">
-                        
+                    <div class="cd-items" v-for="cd in arrayDischi">
+                        <div class="poster">
+                            <img :src="cd.poster" :alt="cd.title">
+                        </div>
+                        <h2 class="title">{{ cd.title }}</h2>
+                        <span class="author">{{ cd.author }}</span>
+                        <span class="year">{{ cd.year }}</span>
                     </div>
                 </main>
             </div>
